@@ -24,13 +24,13 @@ you can visit our presentation for the same here - https://docs.google.com/prese
 ## Contents
 
 - [Requirements](#requirements)
-- [Using Sahyogi](#using-sahayak)
+- [Using Sahyogi](#using-sahayogi)
 - [Building Sahyogi from source](#building-sahyogi-from-source)
 - [Website](#Website-Link)
 - [Youtube](#Youtube-Video)
 
 
-# using sahayak
+# using sahayogi
 
 visit this link for access - https://sahayak1.netlify.app/
 
@@ -41,17 +41,12 @@ visit this link for access - https://sahayak1.netlify.app/
 - portis account with 1 matic token(make portis account at portis.io and get matic token from https://faucet.matic.network/)
 
 
-# Website Link
-
-https://sahayak1.netlify.app/
-
-
 # Youtube Video
 
 https://youtu.be/Nm3WcWdIvDk
 
 
-# Building Sahayak from source
+# Building Sahayogifrom source
 
 Sahayak is written in Javascript (Javascript is required).
 
@@ -60,3 +55,7 @@ Sahayak is written in Javascript (Javascript is required).
 3. Run `npm run start`
 4. Run `npm run dev`
 5. open browser on http://localhost:9000/
+
+
+original repository link - https://gitlab.com/3scava1i3r/sahyogi
+
