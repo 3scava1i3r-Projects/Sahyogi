@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ShieldCheck, ArrowRight } from "lucide-react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { Button } from "./ethereal-beams-hero";
 
 interface SiteHeaderProps {
   showLaunchButton?: boolean;
