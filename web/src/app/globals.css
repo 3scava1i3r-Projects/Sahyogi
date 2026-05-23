@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+/* RainbowKit custom dark theme tweaks */
+[data-rk] {
+  --rk-colors-accentColor: #3b82f6;
+  --rk-colors-accentColorForeground: white;
+}
+
+/* Nice card and input styles for the dApp */
+.card {
+  @apply bg-zinc-900 border border-zinc-800 rounded-2xl p-6;
+}
+
+.input {
+  @apply w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm 
+         placeholder:text-zinc-500 focus:outline-none focus:border-blue-500/60 
+         transition-colors;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 
+         text-sm font-medium transition-all active:scale-[0.985];
+}
+
+.btn-primary {
+  @apply bg-white text-black hover:bg-zinc-200;
+}
+
+.btn-secondary {
+  @apply bg-zinc-800 hover:bg-zinc-700 border border-zinc-700;
+}
+
+.tab {
+  @apply px-5 py-2 rounded-xl text-sm font-medium transition-colors;
+}
+
+.tab-active {
+  @apply bg-white text-black;
+}
+
+.tab-inactive {
+  @apply text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900;
+}
