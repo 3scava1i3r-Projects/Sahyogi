@@ -1,54 +1,40 @@
 {
-  "name": "Sahyogi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --config webpack.config.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/3scava1i3r/Sahyogi.git"
-  },
-  "keywords": [],
-  "author": "Ether_Bots",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/3scava1i3r/Sahyogi/issues"
-  },
-  "homepage": "https://github.com/3scava1i3r/Sahyogi#readme",
   "dependencies": {
-    "@metamask/detect-provider": "^1.1.0",
-    "@portis/web3": "^2.0.0-beta.59",
-    "@truffle/hdwallet-provider": "^1.0.43",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-stage-2": "6.24.1",
-    "babel-preset-stage-3": "6.24.1",
-    "babel-register": "6.26.0",
-    "bootstrap": "4.3.1",
-    "chai": "4.2.0",
-    "chai-as-promised": "7.1.1",
-    "chai-bignumber": "3.0.0",
-    "chainpoint-js": "^1.3.0",
-    "crypto-js": "^4.0.0",
-    "ganache-cli": "^6.10.1",
-    "hash-the-timestamp": "^1.1.0",
-    "identicon.js": "^2.3.3",
-    "path-browserify": "^1.0.1",
-    "skynet-js": "^0.1.0",
-    "truffle": "^5.1.42",
-    "web3": "^1.2.11"
+    "@jitsi/react-sdk": "^1.4.4",
+    "@rainbow-me/rainbowkit": "^2.2.4",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@tanstack/react-query": "^5.62.0",
+    "lucide-react": "^1.16.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sonner": "^2.0.7",
+    "three": "^0.184.0",
+    "viem": "^2.21.54",
+    "wagmi": "^2.13.3"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^6.0.3",
-    "file-saver": "^1.3.2",
-    "web3-loader": "^1.1.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-node-externals": "^2.5.2"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.41",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.184.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
