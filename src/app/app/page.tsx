@@ -164,11 +164,11 @@ export default function SahyogiApp() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen flex flex-col bg-black text-white">
       {/* Now using the exact same glassmorphic header as the hero */}
       <SiteHeader showConnectButton={true} />
 
-      <div className="max-w-5xl mx-auto px-6 py-10">
+      <div className="flex-1 max-w-5xl mx-auto px-6 py-10">
         <div className="mb-10">
           <h1 className="text-4xl font-semibold tracking-tighter mb-2">Secure Document Vault</h1>
           <p className="text-white/60 text-lg">Upload, verify, and timestamp documents on the blockchain.</p>

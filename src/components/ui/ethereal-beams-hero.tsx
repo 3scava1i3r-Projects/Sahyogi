@@ -447,7 +447,7 @@ export const Button = ({ variant = "default", size = "sm", className = "", child
 
 export default function SahyogiEtherealHero() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div className="relative min-h-[calc(100vh-3rem)] w-full overflow-hidden bg-black">
       {/* Animated 3D Beams Background */}
       <div className="absolute inset-0 z-0">
         <Beams
@@ -511,7 +511,7 @@ export default function SahyogiEtherealHero() {
       </nav>
 
       {/* Hero Content - Sahyogi messaging */}
-      <div className="relative z-10 flex min-h-[calc(100vh-4rem)] items-center">
+      <div className="relative z-10 flex min-h-[calc(100vh-8rem)] items-center">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             {/* Badge */}
@@ -533,7 +533,7 @@ export default function SahyogiEtherealHero() {
             {/* Subtitle */}
             <p className="mb-10 text-lg leading-8 text-white/80 sm:text-xl lg:text-2xl max-w-3xl mx-auto">
               Store and verify your most important records on the blockchain with decentralized storage. 
-              Built for the real world — education, healthcare, defence, and beyond.
+              Built for the real world issues like education, healthcare, defence, and beyond.
             </p>
 
             {/* CTAs */}
@@ -550,7 +550,7 @@ export default function SahyogiEtherealHero() {
             </div>
 
             {/* Trust Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white mb-1">100%</div>
                 <div className="text-white/60 text-sm tracking-wide">Immutable Records</div>
@@ -560,7 +560,7 @@ export default function SahyogiEtherealHero() {
                 <div className="text-white/60 text-sm tracking-wide">Skynet + Blockchain</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">No Central Server</div>
+                <div className="text-3xl font-bold text-white mb-1">No Server</div>
                 <div className="text-white/60 text-sm tracking-wide">You own your data</div>
               </div>
             </div>

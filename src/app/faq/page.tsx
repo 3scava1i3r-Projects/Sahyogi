@@ -14,23 +14,23 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen flex flex-col bg-black text-white">
       <SiteHeader />
 
-      <main className="max-w-3xl mx-auto px-6 py-12">
+      <main className="flex-1 max-w-3xl mx-auto px-6 py-12">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-semibold tracking-tighter mb-3">Frequently Asked Questions</h1>
           <p className="text-lg text-white/70">Everything you need to know about Sahyogi</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
-            <details key={index} className="group bg-white/5 border border-white/10 rounded-2xl p-6 open:border-white/20 transition-colors">
+            <details key={index} className="group bg-white/5 border border-white/10 rounded-2xl p-4 open:border-white/20 transition-colors">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium text-lg">
                 {faq.q}
                 <span className="text-white/50 group-open:rotate-180 transition-transform">▼</span>
               </summary>
-              <div className="mt-4 text-white/80 leading-relaxed pl-1">
+              <div className="mt-2 text-white/80 leading-relaxed pl-1">
                 {Array.isArray(faq.a) ? (
                   <ul className="space-y-1.5 list-disc pl-5">
                     {faq.a.map((item, i) => <li key={i}>{item}</li>)}
