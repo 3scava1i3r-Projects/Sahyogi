@@ -24,7 +24,7 @@ export function SiteHeader({
             <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
               <ShieldCheck className="w-5 h-5 text-black" />
             </div>
-            <span className="text-xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">
+            <span className="text-xl font-bold text-white tracking-tight group-hover:text-zinc-300 transition-colors">
               Sahyogi
             </span>
           </Link>

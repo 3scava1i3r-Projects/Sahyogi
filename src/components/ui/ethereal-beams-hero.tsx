@@ -432,7 +432,7 @@ export const Button = ({ variant = "default", size = "sm", className = "", child
 
   return (
     <button
-      className={`group relative overflow-hidden rounded-full ${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`group relative overflow-hidden rounded-full hoverable ${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
       <span className="relative z-10 flex items-center">{children}</span>

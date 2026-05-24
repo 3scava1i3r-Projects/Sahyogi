@@ -180,7 +180,7 @@ export default function SahyogiApp() {
             <button
               key={id}
               onClick={() => setActiveAction(id)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all hoverable ${
                 activeAction === id ? "bg-white text-black" : "text-white/70 hover:text-white hover:bg-white/10"
               }`}
             >
@@ -202,7 +202,7 @@ export default function SahyogiApp() {
               <button
                 onClick={handleUpload}
                 disabled={!uploadFile || loading || !isConnected}
-                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60"
+                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60 hoverable"
               >
                 {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
                 {loading ? "Storing locally..." : "Store File Locally + Simulate Anchor"}
@@ -238,7 +238,7 @@ export default function SahyogiApp() {
               <button
                 onClick={handleVerify}
                 disabled={loading || !verifyFile || !verifyTxHash}
-                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60"
+                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60 hoverable"
               >
                 {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <ShieldCheck className="w-4 h-4" />}
                 Verify File
@@ -267,7 +267,7 @@ export default function SahyogiApp() {
               <button
                 onClick={handleTimeline}
                 disabled={loading || !timelineTxHash}
-                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60"
+                className="w-full flex items-center justify-center gap-2 bg-white text-black font-medium py-3.5 rounded-2xl hover:bg-white/90 disabled:opacity-60 hoverable"
               >
                 {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Clock className="w-4 h-4" />}
                 Get Timestamp (Local)

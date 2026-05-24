@@ -45,7 +45,7 @@ export default function VideoCallPage() {
           <div className="flex flex-col items-center justify-center py-8">
             <button
               onClick={startCall}
-              className="group flex items-center gap-3 rounded-2xl bg-white px-10 py-4 text-xl font-semibold text-black transition-all hover:bg-white/90 active:scale-[0.985]"
+              className="group flex items-center gap-3 rounded-2xl bg-white px-10 py-4 text-xl font-semibold text-black transition-all hover:bg-white/90 active:scale-[0.985] hoverable"
             >
               <Video className="w-6 h-6 group-hover:scale-110 transition-transform" />
               Start a Video Call
@@ -85,7 +85,7 @@ export default function VideoCallPage() {
         <div className="fixed top-6 right-6 z-50">
           <button
             onClick={endCall}
-            className="rounded-xl bg-red-600/90 px-6 py-2 text-sm font-medium hover:bg-red-600 transition-colors shadow-lg"
+            className="rounded-xl bg-red-600/90 px-6 py-2 text-sm font-medium hover:bg-red-600 transition-colors shadow-lg hoverable"
           >
             End Call
           </button>
